@@ -4,6 +4,12 @@
     <color name="colorPrimaryDark">#c6c6c6</color>
     <color name="colorAccent">#FF4081</color>
 
+    <!-- BottomBar Start -->
+    <color name="main_tab_item_text_select">#000000</color>
+    <color name="main_tab_item_text_normal">#e8e8e8</color>
+    <color name="tab_item_background">#ffffff</color>
+    <!-- BottomBar End-->
+
     <!-- Banner  Start-->
     <color name="maskPressed">#33888888</color>
     <color name="maskPressed2">#22808080</color>

@@ -5,6 +5,14 @@
 
     <string name="action_settings">Settings</string>
 
+    <!--  BottomBar Navigation Start -->
+    <string name="index">首页</string>
+    <string name="map">地图</string>
+    <string name="love">关注</string>
+    <string name="person">个人</string>
+    <!-- BottomBar Navigation End-->
+
+    <!-- DrawerLayout Start -->
     <!-- About tab -->
     <string name="about_developers_label">Main developers</string>
     <string name="about_translator_label">Translator</string>
@@ -35,4 +43,5 @@
     <string name="nav_home">Home</string>
 
     <string name="aboutme">UX / UI Mobile Application\nFront-End Android Developer</string>
+    <!-- DrawerLayout End -->
 </resources>

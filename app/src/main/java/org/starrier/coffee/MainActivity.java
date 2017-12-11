@@ -5,7 +5,9 @@ import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -16,8 +18,18 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+import org.starrier.coffee.fragment.IndexFragment;
+import org.starrier.coffee.fragment.LoveFragment;
+import org.starrier.coffee.fragment.MapFragment;
+import org.starrier.coffee.fragment.PersonFragment;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener,RadioGroup.OnCheckedChangeListener{
 
     /* DrawerLayout Start */
     private static final String SELECTED_ITEM_ID = "SELECTED_ITEM_ID";
@@ -29,10 +41,26 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private Toolbar mToolbar;
     /* DrawerLayout End */
 
+    /* BottomBar Navigation param start*/
+    private RadioGroup mRadioGroup;
+    private List<Fragment> fragments = new ArrayList<>();
+    private Fragment fragment;
+    private FragmentManager fm;
+    private FragmentTransaction transaction;
+    private RadioButton rbIndex,rbMap,rbLove,rbPerson;
+    /* BottomBar Navigation param end */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        /* BottomBar Navigation start */
+        initView();
+        mRadioGroup.setOnCheckedChangeListener(this);
+        fragments = getFragments();
+        setDefaultFragment();
+        /* BottomBar Navigation end */
 
         /* DrawerLayout Start*/
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -84,6 +112,97 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
         /* DrawerLayout End */
     }
+    /* BottomBar Navigation function start */
+    public List<Fragment> getFragments() {
+        fragments.add(new IndexFragment());
+        fragments.add(new MapFragment());
+        fragments.add(new LoveFragment());
+        fragments.add(new PersonFragment());
+        return fragments;
+    }
+
+    private void setDefaultFragment() {
+        fm=getSupportFragmentManager();
+        transaction=fm.beginTransaction();
+        fragment=fragments.get(0);
+        transaction.replace(R.id.mFragment,fragment);
+        transaction.commit();
+    }
+
+    private void initView() {
+        mRadioGroup = (RadioGroup) findViewById(R.id.mRadioGroup);
+        rbIndex= (RadioButton) findViewById(R.id.rb_index);
+        rbMap= (RadioButton) findViewById(R.id.rb_map);
+        rbLove= (RadioButton) findViewById(R.id.rb_love);
+        rbPerson= (RadioButton) findViewById(R.id.rb_person);
+    }
+
+    @Override
+    public void onCheckedChanged(RadioGroup group, int checkedId) {
+        fm=getSupportFragmentManager();
+        transaction=fm.beginTransaction();
+        switch (checkedId){
+            case R.id.rb_index:
+                fragment=fragments.get(0);
+                transaction.replace(R.id.mFragment,fragment);
+                break;
+            case R.id.rb_map:
+                fragment=fragments.get(1);
+                transaction.replace(R.id.mFragment,fragment);
+                break;
+            case R.id.rb_love:
+                fragment=fragments.get(2);
+                transaction.replace(R.id.mFragment,fragment);
+                break;
+            case R.id.rb_person:
+                fragment=fragments.get(3);
+                transaction.replace(R.id.mFragment,fragment);
+                break;
+        }
+        setTabState();
+        transaction.commit();
+    }
+
+    private void setTabState() {
+        setIndexState();
+        setMapState();
+        setLoveState();
+        setPersonState();
+    }
+
+    private void setPersonState() {
+        if (rbPerson.isChecked()){
+            rbPerson.setTextColor(ContextCompat.getColor(this,R.color.main_tab_item_text_select));
+        }else{
+            rbPerson.setTextColor(ContextCompat.getColor(this,R.color.main_tab_item_text_normal));
+        }
+    }
+
+    private void setIndexState() {
+        if (rbIndex.isChecked()){
+            rbIndex.setTextColor(ContextCompat.getColor(this,R.color.main_tab_item_text_select));
+        }else{
+            rbIndex.setTextColor(ContextCompat.getColor(this,R.color.main_tab_item_text_normal));
+        }
+    }
+
+    private void setLoveState() {
+        if (rbLove.isChecked()){
+            rbLove.setTextColor(ContextCompat.getColor(this,R.color.main_tab_item_text_select));
+        }else{
+            rbLove.setTextColor(ContextCompat.getColor(this,R.color.main_tab_item_text_normal));
+        }
+    }
+
+    private void setMapState() {
+        if (rbMap.isChecked()){
+            rbMap.setTextColor(ContextCompat.getColor(this,R.color.main_tab_item_text_select));
+        }else{
+            rbMap.setTextColor(ContextCompat.getColor(this,R.color.main_tab_item_text_normal));
+        }
+    }
+    /* BottomBar Navigation function end */
+
     /* DrawerLayout Start */
     public void switchFragment(int itemId) {
         mSelectedId = mNavigationView.getMenu().getItem(itemId).getItemId();
@@ -169,5 +288,5 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             super.onBackPressed();
         }
     }
-    /*  DrawerLayot End  */
+    /*  DrawerLayout End  */
 }
