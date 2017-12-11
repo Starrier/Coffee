@@ -17,8 +17,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
-import org.starrier.coffee.fragment.HomeFragment;
-
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
     /* DrawerLayout Start */
@@ -104,12 +102,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         final View elevation = findViewById(R.id.elevation);
         Fragment navFragment = null;
         switch (itemId) {
-
+/*
             case R.id.nav_2:
                 mPrevSelectedId = itemId;
                 setTitle(R.string.nav_reward);
                 navFragment = new HomeFragment();
-                break;
+                break;*/
+
             //case R.id.nav_5:
             //startActivity(new Intent(this, SettingsActivity.class));
             //mNavigationView.getMenu().findItem(mPrevSelectedId).setChecked(true);

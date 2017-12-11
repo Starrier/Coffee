@@ -3,8 +3,15 @@
     <color name="colorPrimary">#FFF</color>
     <color name="colorPrimaryDark">#c6c6c6</color>
     <color name="colorAccent">#FF4081</color>
+
+    <!-- Banner  Start-->
+    <color name="maskPressed">#33888888</color>
+    <color name="maskPressed2">#22808080</color>
+    <!-- Banner End-->
+
+    <!-- DrawerLayout Start-->
     <color name="menu_background">#119c4b</color>
     <color name="background">#ececec</color>
-
+    <!-- DrawerLayout End -->
 
 </resources>

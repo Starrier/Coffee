@@ -7,6 +7,20 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <!--  BootStrap start-->
+    <style name="FrameButtonStyle" parent="android:TextAppearance.Holo.Widget.Button">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:background">@drawable/btn_guide_bg_unpressed</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+    </style>
+    <!-- BootStrap end -->
+
+    <!-- DrawerLayout Start -->
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
 
@@ -35,5 +49,6 @@
         <item name="pix_fontItalic">fonts/NunitoSans-SemiBold.ttf</item>
         <item name="pix_fontBoldItalic">fonts/QanelasSoft-ExtraBold.otf</item>
     </style>
+    <!-- DrawerLayout End -->
 
 </resources>
