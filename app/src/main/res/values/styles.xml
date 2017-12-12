@@ -23,7 +23,6 @@
     <!-- DrawerLayout Start -->
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
-
         <item name="windowNoTitle">true</item>
     </style>
 
@@ -50,5 +49,13 @@
         <item name="pix_fontBoldItalic">fonts/QanelasSoft-ExtraBold.otf</item>
     </style>
     <!-- DrawerLayout End -->
+
+    <!-- LoginSign Start -->
+    <style name="AppTheme.NoActionBar.FullScreen">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <!-- LoginSign End -->
 
 </resources>

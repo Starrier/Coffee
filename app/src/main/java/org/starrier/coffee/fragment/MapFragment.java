@@ -12,7 +12,7 @@ public class MapFragment extends  Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_index, null);
+        View view = inflater.inflate(R.layout.fragment_map, null);
         return view;
     }
 }
