@@ -12,12 +12,13 @@
         android:background="@drawable/gra_gray"
         android:orientation="vertical">
 
+        <include layout="@layout/toolbar" />
         <FrameLayout
             android:id="@+id/content_frame"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-        <include layout="@layout/toolbar" />
+
 
 
 

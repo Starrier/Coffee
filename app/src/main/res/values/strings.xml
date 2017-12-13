@@ -44,4 +44,10 @@
 
     <string name="aboutme">UX / UI Mobile Application\nFront-End Android Developer</string>
     <!-- DrawerLayout End -->
+
+    <!-- Banner Start -->
+    <string name="Coffee">this is new coffee</string>
+    <!-- Banner End -->
+
+
 </resources>
