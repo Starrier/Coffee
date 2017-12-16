@@ -63,10 +63,10 @@
     </string>
     <!-- Banner End -->
 
-    <!-- Index LinearLayout Start -->
+    <!-- Index LinearLayout Start
     <string name="fa-coffee">&#xf0f4;</string>
     <string name="fa-star-half-empty">&#xf123;</string>
-    <!-- Index LinearLayout End -->
+     Index LinearLayout End -->
 
 
 </resources>
