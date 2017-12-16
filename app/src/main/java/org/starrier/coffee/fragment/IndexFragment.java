@@ -1,7 +1,7 @@
 package org.starrier.coffee.fragment;
 
 
-import android.graphics.Typeface;
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.os.Handler;
@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.starrier.coffee.FontManager;
+import org.starrier.coffee.Login.LoginActivity;
 import org.starrier.coffee.R;
 
 import java.util.ArrayList;
@@ -55,6 +55,8 @@ public class IndexFragment extends Fragment {
     private ViewPagerAdapter adapter;
     private ScheduledExecutorService scheduledExecutorService;
 
+
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -63,16 +65,52 @@ public class IndexFragment extends Fragment {
 
         mView=inflater.inflate(R.layout.fragment_index, null);
         setView();
+
+
+
         return mView;
+
     }
 
-   /* @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        Typeface iconfont = Typeface.createFromAsset(getAssets(), "iconfont/iconfont.ttf");
-        TextView textview = (TextView)findViewById(R.id.like);
-        textview.setTypeface(iconfont);
-    }*/
+    /* 从当前Activity 的一个Fragment 的控件中 跳转到另一个Activity中 Start */
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        ImageView game=(ImageView)getView().findViewById(R.id.game);
+        game.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView linear_coffee=(ImageView)getView().findViewById(R.id.linear_coffee);
+        linear_coffee.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+        ImageView school=(ImageView)getView().findViewById(R.id.school);
+        school.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+        ImageView shopping=(ImageView)getView().findViewById(R.id.shopping);
+        shopping.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+     /* 从当前Activity 的一个Fragment 的控件中 跳转到另一个Activity中 Ene */
 
     private void setView(){
         mViewPaper = (ViewPager)mView.findViewById(R.id.vp);
