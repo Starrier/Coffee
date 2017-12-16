@@ -37,7 +37,7 @@ public class GuidePagerActivity extends FragmentActivity {
     private List<Fragment> fragments = new ArrayList<>();
     private int[] videoRes = new int[]{R.raw.guide1, R.raw.guide2, R.raw.guide3};
     private LinearLayout.LayoutParams params1, params2;
-   /* Runnable runnable=new Runnable() {
+    Runnable runnable=new Runnable() {
         @Override
         public void run() {
             Intent intent = new Intent();
@@ -45,7 +45,7 @@ public class GuidePagerActivity extends FragmentActivity {
             startActivity(intent);
             finish();
         }
-    };*/
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,8 +56,8 @@ public class GuidePagerActivity extends FragmentActivity {
         ButterKnife.bind(this);
         init();
         setPageChange();
-     /*   Timer timer = new Timer();
-        new Handler().postDelayed(runnable, 5000);*/
+        Timer timer = new Timer();
+        new Handler().postDelayed(runnable, 5000);
 
 
     }
