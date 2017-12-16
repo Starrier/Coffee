@@ -65,6 +65,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @BindView(R.id.Love)ImageView Love;
     @BindView(R.id.Me)ImageView Me;*/
 
+    @BindView(R.id.user)ImageView user;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -137,6 +140,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             else
                 mDrawerLayout.closeDrawers();
         }
+
+
+
         /* DrawerLayout End */
     }
     /* BottomBar Navigation function start */

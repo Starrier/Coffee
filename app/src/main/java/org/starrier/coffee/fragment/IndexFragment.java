@@ -2,8 +2,6 @@ package org.starrier.coffee.fragment;
 
 
 import android.content.Intent;
-import android.graphics.Typeface;
-import android.media.Image;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.os.Handler;
@@ -16,7 +14,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.starrier.coffee.FontManager;
 import org.starrier.coffee.Login.LoginActivity;
 import org.starrier.coffee.R;
 
@@ -25,8 +22,6 @@ import java.util.List;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
-
-import butterknife.BindView;
 
 /**
  * Created by Administrator on 2016/7/13.
@@ -114,15 +109,8 @@ public class IndexFragment extends Fragment {
                 startActivity(intent);
             }
         });
-
-
-
-
-
     }
      /* 从当前Activity 的一个Fragment 的控件中 跳转到另一个Activity中 Ene */
-
-
 
     private void setView(){
         mViewPaper = (ViewPager)mView.findViewById(R.id.vp);

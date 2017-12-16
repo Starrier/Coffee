@@ -63,12 +63,22 @@
     </string>
     <!-- Banner End -->
 
-   <!--Index LinearLayout Start-->
-   <string name="indexHome">&#xe665;</string>
+    <!--Index LinearLayout Start-->
+    <string name="indexHome">&#xe665;</string>
     <string name="Love">&#xe643;</string>
     <string name="Me">&#xe60d;</string>
     <string name="FCoffee">&#xe63d;</string>
-  <!--   Index LinearLayout End -->
+    <!--   Index LinearLayout End -->
+
+
+    <!-- Login Register Start-->
+    <string name="password">密&#160;&#160;&#160;&#160;码：</string>
+    <string name="username">用户名：</string>
+    <string name="reg_user">用&#160;户&#160;名：</string>
+    <string name="reg_password">输入密码:</string>
+    <string name="reg_pwd_again">确认密码：</string>
+    <string name="register">注&#160;&#160;册</string>
+    <!-- Login Register End -->
 
 
 </resources>
