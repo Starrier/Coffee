@@ -62,7 +62,7 @@
         <!-- 定位需要的服务 -->
 
         <activity
-            android:name=".LoginActivity"
+            android:name="org.starrier.coffee.Login.LoginActivity"
             android:label="@string/title_activity_login">
         </activity>
     </application>
