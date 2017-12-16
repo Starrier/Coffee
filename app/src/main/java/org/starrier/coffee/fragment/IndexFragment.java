@@ -1,6 +1,7 @@
 package org.starrier.coffee.fragment;
 
 
+import android.graphics.Typeface;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.os.Handler;
@@ -13,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import org.starrier.coffee.FontManager;
 import org.starrier.coffee.R;
 
 import java.util.ArrayList;
@@ -57,10 +59,21 @@ public class IndexFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
+
+
         mView=inflater.inflate(R.layout.fragment_index, null);
         setView();
         return mView;
     }
+
+   /* @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Typeface iconfont = Typeface.createFromAsset(getAssets(), "iconfont/iconfont.ttf");
+        TextView textview = (TextView)findViewById(R.id.like);
+        textview.setTypeface(iconfont);
+    }*/
+
     private void setView(){
         mViewPaper = (ViewPager)mView.findViewById(R.id.vp);
 
@@ -188,4 +201,6 @@ public class IndexFragment extends Fragment {
             scheduledExecutorService = null;
         }
     }
+
+
 }

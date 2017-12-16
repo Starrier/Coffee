@@ -49,52 +49,56 @@
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingBottom="5dp"
+
                     android:paddingTop="5dp"
                     android:background="@drawable/border_top">
                     <RadioButton
-                        android:drawableTop="@drawable/icon_index_selector"
+                        android:textSize="45dp"
                         android:button="@null"
                         android:textColor="@drawable/text_selector"
                         android:id="@+id/rb_index"
                         android:gravity="center"
                         android:layout_width="0dp"
-                        android:text="@string/index"
+                        android:text="@string/indexHome"
                         android:layout_weight="1"
-                        android:layout_height="match_parent" />
+                        android:layout_height="50dp"
+                         />
 
                     <RadioButton
-                        android:drawableTop="@drawable/icon_map_selector"
+                        android:textSize="45dp"
                         android:button="@null"
                         android:textColor="@drawable/text_selector"
                         android:id="@+id/rb_map"
                         android:gravity="center"
                         android:layout_width="0dp"
-                        android:text="@string/map"
+                        android:text="@string/FCoffee"
                         android:layout_weight="1"
-                        android:layout_height="match_parent" />
+                        android:layout_height="44dp"
+                        />
 
                     <RadioButton
-                        android:drawableTop="@drawable/icon_love_selector"
-                        android:button="@null"
+                        android:textSize="45dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="20dp"                        android:button="@null"
                         android:textColor="@drawable/text_selector"
                         android:id="@+id/rb_love"
                         android:gravity="center"
                         android:layout_width="0dp"
-                        android:text="@string/love"
+                        android:text="@string/Love"
                         android:layout_weight="1"
-                        android:layout_height="match_parent" />
+                        />
 
                     <RadioButton
-                        android:drawableTop="@drawable/icon_person_selector"
+                        android:textSize="45dp"
                         android:button="@null"
                         android:textColor="@drawable/text_selector"
                         android:id="@+id/rb_person"
                         android:gravity="center"
                         android:layout_width="0dp"
-                        android:text="@string/person"
+                        android:text="@string/Me"
                         android:layout_weight="1"
-                        android:layout_height="match_parent" />
+                        android:layout_height="50dp"
+                        />
                 </RadioGroup>
             </LinearLayout>
 
