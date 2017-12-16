@@ -17,7 +17,7 @@
     <item>
         <shape >
             <solid
-                android:color="#ffffff"
+                android:color="@color/BottomBar"
                 />
         </shape>
     </item>

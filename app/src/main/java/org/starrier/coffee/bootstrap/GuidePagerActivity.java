@@ -3,6 +3,7 @@ package org.starrier.coffee.bootstrap;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
@@ -13,6 +14,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Timer;
 
 import org.starrier.coffee.MainActivity;
 import org.starrier.coffee.R;
@@ -35,17 +37,31 @@ public class GuidePagerActivity extends FragmentActivity {
     private List<Fragment> fragments = new ArrayList<>();
     private int[] videoRes = new int[]{R.raw.guide1, R.raw.guide2, R.raw.guide3};
     private LinearLayout.LayoutParams params1, params2;
-
+    Runnable runnable=new Runnable() {
+        @Override
+        public void run() {
+            Intent intent = new Intent();
+            intent.setClass(GuidePagerActivity.this, MainActivity.class);
+            startActivity(intent);
+            finish();
+        }
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_guidepager);
+
         ButterKnife.bind(this);
         init();
         setPageChange();
+        Timer timer = new Timer();
+        new Handler().postDelayed(runnable, 4300);
+
+
     }
+
 
     private void init() {
         vpGuide.setOffscreenPageLimit(4);

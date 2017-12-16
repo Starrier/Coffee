@@ -1,8 +1,11 @@
 package org.starrier.coffee;
 
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
+import android.media.Image;
 import android.os.Handler;
 import android.preference.PreferenceManager;
+import android.provider.ContactsContract;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -17,9 +20,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 
 import org.starrier.coffee.fragment.IndexFragment;
 import org.starrier.coffee.fragment.LoveFragment;
@@ -28,6 +33,10 @@ import org.starrier.coffee.fragment.PersonFragment;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import butterknife.BindView;
+
+import android.graphics.Typeface;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener,RadioGroup.OnCheckedChangeListener{
 
@@ -50,17 +59,35 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private RadioButton rbIndex,rbMap,rbLove,rbPerson;
     /* BottomBar Navigation param end */
 
+
+    /*@BindView(R.id.indexHome) ImageView indexHome;
+    @BindView(R.id.FCoffee)ImageView FCoffee;
+    @BindView(R.id.Love)ImageView Love;
+    @BindView(R.id.Me)ImageView Me;*/
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
         /* BottomBar Navigation start */
         initView();
+        Typeface iconfont = Typeface.createFromAsset(getAssets(), "iconfont/iconfont.ttf");
+        rbIndex.setTypeface(iconfont);
+        rbMap.setTypeface(iconfont);
+        rbLove.setTypeface(iconfont);
+        rbPerson.setTypeface(iconfont);
+
+
         mRadioGroup.setOnCheckedChangeListener(this);
         fragments = getFragments();
         setDefaultFragment();
         /* BottomBar Navigation end */
+
+
 
         /* DrawerLayout Start*/
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);

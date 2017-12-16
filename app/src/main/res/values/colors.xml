@@ -25,4 +25,6 @@
     <color name="colorAccentTrans">#a0009688</color>
     <color name="colorBlackTrans">#a0000000</color>
     <!-- LoginSign End -->
+
+    <color name="BottomBar">#FFFFF0</color>
 </resources>
