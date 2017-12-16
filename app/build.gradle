@@ -19,6 +19,11 @@ android {
 }
 
 dependencies {
+
+    /* Favourite ListView Start */
+    compile 'com.cleveroad:bubbleanimation-layout:1.0.0'
+    /* Favourite ListView End*/
+
     /* Banner Start*/
     compile 'com.youth.banner:banner:1.4.10'
     /* Banner End */

@@ -35,19 +35,19 @@ public class IndexFragment extends Fragment {
     private int oldPosition = 0;
     //存放图片的id
     private int[] imageIds = new int[]{
-            R.drawable.about,
-            R.drawable.about,
-            R.drawable.about,
-            R.drawable.about,
-            R.drawable.about
+            R.drawable.coffee1,
+            R.drawable.coffee2,
+            R.drawable.coffee3,
+            R.drawable.coffee4,
+            R.drawable.coffee5
     };
     //存放图片的标题
     private String[] titles = new String[]{
-            "轮播1",
-            "轮播2",
-            "轮播3",
-            "轮播4",
-            "轮播5"
+            "午后的雨让人遐思,午后的雨中的咖啡更让人飘思",
+            "咖啡中有亲情,有友情,有爱情,就看你怎么去品味",
+            "咖啡没有心情，有心情的只是喝咖啡的人",
+            "咖啡,也单纯,也复杂",
+            "咖啡的世界很小，但绝对精致和深邃"
     };
     private TextView title;
     private ViewPagerAdapter adapter;
