@@ -67,6 +67,10 @@
             android:label="@string/title_activity_login" />
         <activity android:name=".Login.firstPage" />
         <activity android:name=".Login.registerActivity"></activity>
+
+        <activity android:name=".shop.ShoppingCartActivity"
+            android:label="ShoppingCart"></activity>
+
     </application>
 
 </manifest>

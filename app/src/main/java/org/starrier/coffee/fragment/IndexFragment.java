@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import org.starrier.coffee.Login.LoginActivity;
 import org.starrier.coffee.R;
+import org.starrier.coffee.shop.ShoppingCartActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -76,6 +77,8 @@ public class IndexFragment extends Fragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
+        /* 四个图片的跳转  Start */
         ImageView game=(ImageView)getView().findViewById(R.id.game);
         game.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -105,10 +108,12 @@ public class IndexFragment extends Fragment {
         shopping.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), LoginActivity.class);
+                Intent intent = new Intent(getActivity(), ShoppingCartActivity.class);
                 startActivity(intent);
             }
         });
+        /* 四个图片的跳转 End*/
+
     }
      /* 从当前Activity 的一个Fragment 的控件中 跳转到另一个Activity中 Ene */
 
