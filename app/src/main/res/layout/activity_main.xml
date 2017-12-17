@@ -48,12 +48,12 @@
                     android:id="@+id/mRadioGroup"
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="55dp"
 
                     android:paddingTop="5dp"
                     android:background="@drawable/border_top">
                     <RadioButton
-                        android:textSize="45dp"
+                        android:textSize="40dp"
                         android:button="@null"
                         android:textColor="@drawable/text_selector"
                         android:id="@+id/rb_index"
@@ -61,11 +61,11 @@
                         android:layout_width="0dp"
                         android:text="@string/indexHome"
                         android:layout_weight="1"
-                        android:layout_height="50dp"
+                        android:layout_height="45dp"
                          />
 
                     <RadioButton
-                        android:textSize="45dp"
+                        android:textSize="40dp"
                         android:button="@null"
                         android:textColor="@drawable/text_selector"
                         android:id="@+id/rb_map"
@@ -73,12 +73,12 @@
                         android:layout_width="0dp"
                         android:text="@string/FCoffee"
                         android:layout_weight="1"
-                        android:layout_height="44dp"
+                        android:layout_height="45dp"
                         />
 
                     <RadioButton
-                        android:textSize="45dp"
-                        android:layout_height="50dp"
+                        android:textSize="40dp"
+                        android:layout_height="45dp"
                         android:layout_marginBottom="20dp"                        android:button="@null"
                         android:textColor="@drawable/text_selector"
                         android:id="@+id/rb_love"
@@ -89,7 +89,7 @@
                         />
 
                     <RadioButton
-                        android:textSize="45dp"
+                        android:textSize="40dp"
                         android:button="@null"
                         android:textColor="@drawable/text_selector"
                         android:id="@+id/rb_person"
@@ -97,7 +97,7 @@
                         android:layout_width="0dp"
                         android:text="@string/Me"
                         android:layout_weight="1"
-                        android:layout_height="50dp"
+                        android:layout_height="45dp"
                         />
                 </RadioGroup>
             </LinearLayout>

@@ -88,8 +88,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="88dp"
-        android:layout_marginTop="264dp"
-        android:layout_marginBottom="240dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginBottom="260dp"
         android:background="@color/colorPrimary"
         android:orientation="horizontal">
 
@@ -162,7 +162,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_marginTop="348dp"
+        android:layout_marginTop="355dp"
         android:layout_height="245dp"
         android:background="@color/colorPrimary"
         android:layout_marginBottom="80dp"

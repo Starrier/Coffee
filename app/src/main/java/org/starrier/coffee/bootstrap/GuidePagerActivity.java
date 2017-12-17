@@ -57,7 +57,7 @@ public class GuidePagerActivity extends FragmentActivity {
         init();
         setPageChange();
         Timer timer = new Timer();
-        new Handler().postDelayed(runnable, 4300);
+        new Handler().postDelayed(runnable, 4700);
 
 
     }

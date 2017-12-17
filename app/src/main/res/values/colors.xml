@@ -26,7 +26,9 @@
     <color name="colorBlackTrans">#a0000000</color>
     <!-- LoginSign End -->
 
-    <color name="BottomBar">#FFFFF0</color>
+    <!-- BottomBar Color Start-->
+    <color name="BottomBar">#A0522D</color>
+    <!-- BottomBar Color End -->
 
     <!-- Shopping Cart Start -->
     <color name="color_translation">#00FFFFFF</color>
