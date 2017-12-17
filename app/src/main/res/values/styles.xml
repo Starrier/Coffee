@@ -58,4 +58,10 @@
     </style>
     <!-- LoginSign End -->
 
+    <!-- Me Start -->
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>  <!--把该属性改为false即可使menu位置位于toolbar之下-->
+    </style>
+    <!-- Me　end-->
+
 </resources>
