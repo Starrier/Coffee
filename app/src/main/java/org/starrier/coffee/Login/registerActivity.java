@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import org.starrier.coffee.R;
@@ -24,11 +25,15 @@ public class registerActivity extends Activity implements View.OnClickListener{
     private EditText editUser;
     private EditText pwd;
     private EditText pwdAgain;
+    private LinearLayout registerbackground;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
+        registerbackground = (LinearLayout) findViewById(R.id.register);
+        registerbackground.getBackground().setAlpha(80);
         editUser=(EditText)findViewById(R.id.reg_userText);
         pwd=(EditText)findViewById(R.id.reg_pwdText);
         pwdAgain=(EditText)findViewById(R.id.reg_pwdagText);
@@ -49,7 +54,10 @@ public class registerActivity extends Activity implements View.OnClickListener{
                 createDatabase();
                 createTable();
                 insertData();
-                Toast.makeText(registerActivity.this,"注册成功",Toast.LENGTH_LONG).show();
+                Toast.makeText(registerActivity.this,"注册成功,返回登录界面",Toast.LENGTH_LONG).show();
+                Intent intent1 = new Intent();
+                intent1.setClass(this, LoginActivity.class);
+                startActivity(intent1);
                 break;
             case 2:
                 Intent intent=new Intent(this,LoginActivity.class);

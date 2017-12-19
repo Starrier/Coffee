@@ -31,6 +31,7 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -57,6 +58,7 @@ public class LoginActivity  extends Activity implements View.OnClickListener{
     private String qurySql="select * from userInfo";
     private String userName1;
     private String password1;
+    private LinearLayout loginBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +66,9 @@ public class LoginActivity  extends Activity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_login);
+
+        loginBack=(LinearLayout)findViewById(R.id.Login_background);
+        loginBack.getBackground().setAlpha(90);
         userName=(EditText)findViewById(R.id.editText);
         password=(EditText)findViewById(R.id.editText3);
         loadButton = (Button) findViewById(R.id.button);

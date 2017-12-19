@@ -72,12 +72,13 @@
 
 
     <!-- Login Register Start-->
-    <string name="password">密&#160;&#160;&#160;&#160;码：</string>
-    <string name="username">用户名：</string>
-    <string name="reg_user">用&#160;户&#160;名：</string>
-    <string name="reg_password">输入密码:</string>
-    <string name="reg_pwd_again">确认密码：</string>
-    <string name="register">注&#160;&#160;册</string>
+    <string name="password">Password:</string>
+    <string name="username">UserName:</string>
+    <string name="reg_user">UserName</string>
+    <string name="reg_password">Password:</string>
+    <string name="reg_pwd_again">Confirm：</string>
+    <string name="register">注册</string>
+    <string name="login">&#160;&#160;&#160;登录&#160;&#160;&#160;</string>
     <!-- Login Register End -->
 
 
