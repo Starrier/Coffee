@@ -9,28 +9,16 @@ public class VideoConstant {
     public static String[][] videoUrls =
             {
                     {
-                            "blob:http://www.iqiyi.com/348a284c-b469-43b4-bfd3-5304b01c152b",
-                            "http://video.jiecao.fm/8/17/%E6%8A%AB%E8%90%A8.mp4",
-                            "http://video.jiecao.fm/8/18/%E5%A4%A7%E5%AD%A6.mp4",
-                            "http://video.jiecao.fm/8/16/%E8%B7%B3%E8%88%9E.mp4",
+                            "https://f.us.sinaimg.cn/000BcMh2lx07gJrs8LLa01040200fI6R0k01.mp4?label=mp4_ld&template=28&Expires=1513870379&ssig=MCT00DRMwg&KID=unistore,video",
+                            "https://f.us.sinaimg.cn/003heBnRlx07gL51PkUE010402009pK30k01.mp4?label=mp4_ld&template=28&Expires=1513870602&ssig=WsduDhzRrh&KID=unistore,video",
+                            "http://http://www.starrier.net/video/video1.mp4",
+                            "https://f.us.sinaimg.cn/001Ci5Hflx07gKmcwknm010402006HIA0k01.mp4?label=mp4_hd&template=28&Expires=1513868415&ssig=%2B2N84zrjw1&KID=unistore,video",
                             "http://video.jiecao.fm/8/16/%E9%B8%AD%E5%AD%90.mp4",
                             "http://video.jiecao.fm/8/16/%E9%A9%BC%E8%83%8C.mp4",
                             "http://video.jiecao.fm/8/16/%E4%BF%AF%E5%8D%A7%E6%92%91.mp4",
                             "http://video.jiecao.fm/5/1/%E8%87%AA%E5%8F%96%E5%85%B6%E8%BE%B1.mp4",
                             "http://gslb.miaopai.com/stream/ed5HCfnhovu3tyIQAiv60Q__.mp4",
                             "http://video.jiecao.fm/11/23/xu/%E5%A6%B9%E5%A6%B9.mp4"
-                    },
-                    {
-                            "http://video.jiecao.fm/11/24/xin/-%2024%20-%20.mp4",
-                            "http://video.jiecao.fm/11/24/6/%E9%85%92%E9%A9%BE.mp4",
-                            "http://video.jiecao.fm/11/23/6/%E7%8B%97.mp4",
-                            "http://video.jiecao.fm/11/23/xu/%E7%94%B5%E5%BD%B1.mp4"
-                    },
-                    {
-                            "http://video.jiecao.fm/11/23/6/%E5%AD%A9%E5%AD%90.mp4",
-                            "http://video.jiecao.fm/11/24/xu/%E6%97%A5%E5%8E%86.mp4",
-                            "http://video.jiecao.fm/11/26/-iDareX.mp4",
-                            "http://video.jiecao.fm/11/24/6/%E5%AD%94%E6%98%8E%E7%81%AF.mp4"
                     }
             };
 

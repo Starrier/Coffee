@@ -45,11 +45,6 @@ public class LoveFragment extends  Fragment {
         super.onActivityCreated(saveInstanceState);
 
         android.support.v7.app.ActionBar actionbar=((AppCompatActivity)getActivity()).getSupportActionBar();
-        actionbar.setDisplayHomeAsUpEnabled(true);
-        actionbar.setDisplayShowHomeEnabled(true);
-        actionbar.setDisplayShowTitleEnabled(true);
-        actionbar.setDisplayUseLogoEnabled(false);
-        actionbar.setTitle("NormalListView");
 
 
         listView = (ListView) getView().findViewById(R.id.listview);
