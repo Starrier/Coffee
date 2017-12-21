@@ -86,9 +86,10 @@ public class LoginActivity  extends Activity implements View.OnClickListener{
         switch (tag) {
             case 1:
                 Intent intent1=new Intent(LoginActivity.this,MainActivity.class);
-                intent1.putExtra("id",1);
+                intent1.putExtra("id",4);
                 intent1.putExtra("userName",userName.getText().toString());
                 intent1.putExtra("password",password.getText().toString());
+
                 if (idCorrect()){
                     startActivity(intent1);
                 }

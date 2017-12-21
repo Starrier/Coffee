@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="false"
-    tools:context="org.starrier.coffee.fragment.IndexFragment">
+    tools:context="org.starrier.coffee.fragment.IndexFragment"
+    android:id="@+id/personFragment">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/main_abl_app_bar"
@@ -42,7 +43,7 @@
                     app:border_width="2dp" />
 
                 <TextView
-                    android:id="@+id/mobile"
+                    android:id="@+id/Users"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/head"
@@ -54,7 +55,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
-                    android:layout_below="@id/mobile"
+                    android:layout_below="@id/Users"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="16dp"
                     android:background="@drawable/shape_credit_score"

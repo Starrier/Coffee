@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @BindView(R.id.Love)ImageView Love;
     @BindView(R.id.Me)ImageView Me;*/
 
-    @BindView(R.id.user)ImageView user;
+    int id;
 
 
     @Override
@@ -144,6 +144,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
         /* DrawerLayout End */
+
+
+     /*   *//* 登录跳转的判断 *//*
+        id = getIntent().getIntExtra("id", 0);
+        if (id == 4) {
+            getSupportFragmentManager()
+                    .beginTransaction().replace(R.id.personFragment, new PersonFragment()).addToBackStack(null).commit();
+        }
+        *//*  登录跳转的判断 */
     }
     /* BottomBar Navigation function start */
     public List<Fragment> getFragments() {
