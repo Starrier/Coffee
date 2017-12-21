@@ -16,7 +16,7 @@
         <android.support.design.widget.CollapsingToolbarLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#5DC9D3"
+            android:background="	#C1CDCD"
             app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
 
             <RelativeLayout
@@ -29,6 +29,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
                     android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
                     android:layout_gravity="bottom"
                     android:background="@mipmap/user_profile_grass" />
 
@@ -49,7 +50,6 @@
                     android:layout_below="@id/head"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="16dp"
-                    android:text="UserName"
                     android:textColor="#000" />
 
                 <TextView
@@ -70,7 +70,7 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="#5DC9D3"
+                android:background="	#C1CDCD"
                 app:contentInsetStart="0dp"
                 app:layout_collapseMode="pin"
                 app:popupTheme="@style/OverflowMenuStyle"
@@ -143,7 +143,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
-                        android:text="累计骑行(公里)"
+                        android:text="用户信誉分数"
                         android:textColor="#868686"
                         android:textSize="11sp" />
                 </LinearLayout>
@@ -161,7 +161,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="1.0"
+                        android:text="10"
                         android:textColor="#F05B48"
                         android:textSize="24sp"
                         android:textStyle="bold" />
@@ -170,7 +170,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
-                        android:text="节约碳排放(千克)"
+                        android:text="收藏视频"
                         android:textColor="#868686"
                         android:textSize="11sp" />
 
@@ -197,7 +197,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="6dp"
-                        android:text="运动成就(大卡)"
+                        android:text="当月消费清单"
                         android:textColor="#868686"
                         android:textSize="11sp" />
                 </LinearLayout>
@@ -224,7 +224,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="8dp"
-                    android:text="16.5元"
+                    android:text="165元"
                     android:textColor="#AAAAAA" />
 
                 <ImageView

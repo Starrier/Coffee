@@ -42,7 +42,7 @@ public class ShoppingCartActivity extends BaseActivity implements View.OnClickLi
     @Override
     protected void initView() {
         tv_title = bindView(R.id.tv_title);
-        tv_title.setText("购物车");
+        tv_title.setText("OnlineCoffee");
         list_shopping_cart = bindView(R.id.list_shopping_cart);
 //        list_shopping_cart.setOnItemClickListener(this);
         ck_all = bindView(R.id.ck_all);
@@ -66,11 +66,11 @@ public class ShoppingCartActivity extends BaseActivity implements View.OnClickLi
 
         for (int i = 0; i < 6; i++) {
             ShoppingCartBean shoppingCartBean = new ShoppingCartBean();
-            shoppingCartBean.setShoppingName("高端大气上档次的T桖");
-            shoppingCartBean.setFabric("纯棉");
+            shoppingCartBean.setShoppingName("卡布奇诺");
+            shoppingCartBean.setFabric("550ml");
             shoppingCartBean.setDressSize(48);
             shoppingCartBean.setPantsSize(65);
-            shoppingCartBean.setPrice(60);
+            shoppingCartBean.setPrice(30);
             shoppingCartBean.setCount(2);
             shoppingCartBeanList.add(shoppingCartBean);
         }

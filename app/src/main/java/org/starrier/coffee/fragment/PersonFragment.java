@@ -51,7 +51,12 @@ public class PersonFragment extends  Fragment {
             }
         });
         Intent intent=getActivity().getIntent();
-   userName.setText("用户名："+intent.getStringExtra("userName"));
+        if (intent.getStringExtra("userName") == null) {
+
+        } else {
+            userName.setText("用户名："+intent.getStringExtra("userName"));
+        }
+
     }
 
 }

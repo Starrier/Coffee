@@ -21,7 +21,7 @@
         android:layout_centerVertical="true"
         android:layout_marginLeft="10dp"
         android:layout_toRightOf="@id/ck_chose"
-        android:background="@mipmap/demo" />
+        android:background="@drawable/shoppingcoffee" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -36,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:text="酒红色纯红色纯羊毛西服套装"
+            android:text="卡布奇诺"
             android:textColor="@color/black"
             android:textStyle="bold" />
 
@@ -82,7 +82,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="面料:"
+            android:text="容量: 550ml"
             android:textColor="@color/gray5" />
 
         <LinearLayout
@@ -95,7 +95,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="西服尺寸: 48"
+                android:text="排队人数: 20人"
                 android:textColor="@color/gray5" />
 
         </LinearLayout>
@@ -106,7 +106,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="西裤尺寸: 68"
+            android:text="预计等待时间"
             android:textColor="@color/gray5" />
 
         <LinearLayout
@@ -119,7 +119,7 @@
                 android:id="@+id/tv_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="￥390"
+                android:text="20￥"
                 android:textColor="@color/black"
                 android:textStyle="bold" />
 

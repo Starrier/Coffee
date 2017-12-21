@@ -94,9 +94,9 @@ public class ShoppingCartAdapter extends BaseAdapter {
         }
         final ShoppingCartBean shoppingCartBean = shoppingCartBeanList.get(position);
         holder.tv_commodity_name.setText(shoppingCartBean.getShoppingName());
-        holder.tv_fabric.setText("面料:" + shoppingCartBean.getFabric());
-        holder.tv_dress.setText("西服尺寸:" + shoppingCartBean.getDressSize());
-        holder.tv_pants.setText("西裤尺寸:" + shoppingCartBean.getPantsSize());
+        holder.tv_fabric.setText("容量:" + shoppingCartBean.getFabric());
+        holder.tv_dress.setText("排队人数:" + shoppingCartBean.getDressSize());
+        holder.tv_pants.setText("预计等待时间:" + shoppingCartBean.getPantsSize());
         holder.tv_price.setText("￥:" + shoppingCartBean.getPrice());
         holder.ck_chose.setChecked(shoppingCartBean.isChoosed());
         holder.tv_show_num.setText(shoppingCartBean.getCount() + "");
