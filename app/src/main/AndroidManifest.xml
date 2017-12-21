@@ -42,10 +42,11 @@
 
     <!-- 高德地图 END -->
 
-    <!-- 播放视频 Start -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <!-- 播放视频 End -->
 
+    <!-- 播放视频 Start -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 播放视频 End -->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -71,12 +72,16 @@
             android:name=".Login.LoginActivity"
             android:label="@string/title_activity_login" />
         <activity android:name=".Login.firstPage" />
-        <activity android:name=".Login.registerActivity"></activity>
-
-        <activity android:name=".shop.ShoppingCartActivity"
-            android:label="ShoppingCart"></activity>
-
-
+        <activity android:name=".Login.registerActivity" />
+        <activity
+            android:name=".shop.ShoppingCartActivity"
+            android:label="ShoppingCart" />
+        <activity
+            android:name=".sharedcoffee"
+            android:label="@string/title_activity_sharedcoffee"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ItemNewsActivity" />
+        <activity android:name=".SettingActivity"></activity>
     </application>
 
 </manifest>

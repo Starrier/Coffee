@@ -12,5 +12,6 @@
 
     <!-- Me Start -->
     <dimen name="image_final_width">32dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
     <!-- Me END -->
 </resources>

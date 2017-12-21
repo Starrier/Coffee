@@ -13,12 +13,12 @@ public class VideoConstant {
                             "https://f.us.sinaimg.cn/003heBnRlx07gL51PkUE010402009pK30k01.mp4?label=mp4_ld&template=28&Expires=1513870602&ssig=WsduDhzRrh&KID=unistore,video",
                             "http://http://www.starrier.net/video/video1.mp4",
                             "https://f.us.sinaimg.cn/001Ci5Hflx07gKmcwknm010402006HIA0k01.mp4?label=mp4_hd&template=28&Expires=1513868415&ssig=%2B2N84zrjw1&KID=unistore,video",
-                            "http://video.jiecao.fm/8/16/%E9%B8%AD%E5%AD%90.mp4",
-                            "http://video.jiecao.fm/8/16/%E9%A9%BC%E8%83%8C.mp4",
-                            "http://video.jiecao.fm/8/16/%E4%BF%AF%E5%8D%A7%E6%92%91.mp4",
-                            "http://video.jiecao.fm/5/1/%E8%87%AA%E5%8F%96%E5%85%B6%E8%BE%B1.mp4",
-                            "http://gslb.miaopai.com/stream/ed5HCfnhovu3tyIQAiv60Q__.mp4",
-                            "http://video.jiecao.fm/11/23/xu/%E5%A6%B9%E5%A6%B9.mp4"
+                            "http://http://www.starrier.net/video/video1.mp4",
+                            "http://http://www.starrier.net/video/video1.mp4",
+                            "http://http://www.starrier.net/video/video1.mp4",
+                            "http://http://www.starrier.net/video/video1.mp4",
+                            "http://http://www.starrier.net/video/video1.mp4",
+                            "http://http://www.starrier.net/video/video1.mp4"
                     }
             };
 

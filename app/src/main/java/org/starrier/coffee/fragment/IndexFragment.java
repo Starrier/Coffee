@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import org.starrier.coffee.Login.LoginActivity;
 import org.starrier.coffee.R;
+import org.starrier.coffee.sharedcoffee;
 import org.starrier.coffee.shop.ShoppingCartActivity;
 
 import java.util.ArrayList;
@@ -56,21 +57,19 @@ public class IndexFragment extends Fragment {
     private ViewPagerAdapter adapter;
     private ScheduledExecutorService scheduledExecutorService;
 
+    /* sharedCoffee Stared */
+    private ImageView sharedCoffee1;
+    private ImageView sharedCoffee2;
 
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-
-
         mView=inflater.inflate(R.layout.fragment_index, null);
         setView();
 
-
-
         return mView;
-
     }
 
     /* 从当前Activity 的一个Fragment 的控件中 跳转到另一个Activity中 Start */
@@ -113,6 +112,18 @@ public class IndexFragment extends Fragment {
             }
         });
         /* 四个图片的跳转 End*/
+
+        /* SharedCoffee Start */
+        sharedCoffee1 = (ImageView) getView().findViewById(R.id.SharedCoffee1);
+        sharedCoffee1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setClass(getActivity(), sharedcoffee.class);
+                startActivity(intent);
+            }
+        });
+        /* SharedCoffee End */
 
     }
      /* 从当前Activity 的一个Fragment 的控件中 跳转到另一个Activity中 Ene */

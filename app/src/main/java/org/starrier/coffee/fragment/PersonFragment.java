@@ -11,6 +11,7 @@ import android.widget.TextView;
 import org.starrier.coffee.Login.LoginActivity;
 import org.starrier.coffee.MainActivity;
 import org.starrier.coffee.R;
+import org.starrier.coffee.SettingActivity;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -45,7 +46,7 @@ public class PersonFragment extends  Fragment {
                     isFirstLogin=false;
                 }else{
                     Intent intent=new Intent();
-                    intent.setClass(getActivity(), MainActivity.class);
+                    intent.setClass(getActivity(), SettingActivity.class);
                     startActivity(intent);
                 }
             }
