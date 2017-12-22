@@ -9,9 +9,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import org.starrier.coffee.Login.LoginActivity;
-import org.starrier.coffee.MainActivity;
 import org.starrier.coffee.R;
-import org.starrier.coffee.SettingActivity;
+import org.starrier.coffee.personal.SettingActivity;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -53,7 +52,7 @@ public class PersonFragment extends  Fragment {
         });
         Intent intent=getActivity().getIntent();
         if (intent.getStringExtra("userName") == null) {
-
+            isFirstLogin=true;
         } else {
             userName.setText("用户名："+intent.getStringExtra("userName"));
         }

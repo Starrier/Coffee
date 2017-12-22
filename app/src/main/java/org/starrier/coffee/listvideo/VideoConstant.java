@@ -1,4 +1,4 @@
-package org.starrier.coffee;
+package org.starrier.coffee.listvideo;
 
 /**
  * Created by Starrier on 2017/12/21.

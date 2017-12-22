@@ -48,6 +48,7 @@
 
     <!-- 播放视频 End -->
     <application
+        android:name=".arouter.application"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -77,11 +78,11 @@
             android:name=".shop.ShoppingCartActivity"
             android:label="ShoppingCart" />
         <activity
-            android:name=".sharedcoffee"
+            android:name=".news.sharedcoffee"
             android:label="@string/title_activity_sharedcoffee"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ItemNewsActivity" />
-        <activity android:name=".SettingActivity"></activity>
+        <activity android:name=".news.ItemNewsActivity" />
+        <activity android:name=".personal.SettingActivity"></activity>
     </application>
 
 </manifest>

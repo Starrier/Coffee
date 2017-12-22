@@ -3,7 +3,6 @@ package org.starrier.coffee.fragment;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
@@ -15,9 +14,7 @@ import android.widget.TextView;
 import android.widget.VideoView;
 
 import org.starrier.coffee.R;
-import org.starrier.coffee.VideoListAdapter;
-
-import java.io.File;
+import org.starrier.coffee.listvideo.VideoListAdapter;
 
 import fm.jiecao.jcvideoplayer_lib.JCVideoPlayer;
 

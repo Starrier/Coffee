@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 import org.starrier.coffee.Login.LoginActivity;
 import org.starrier.coffee.R;
-import org.starrier.coffee.sharedcoffee;
+import org.starrier.coffee.news.sharedcoffee;
 import org.starrier.coffee.shop.ShoppingCartActivity;
 
 import java.util.ArrayList;

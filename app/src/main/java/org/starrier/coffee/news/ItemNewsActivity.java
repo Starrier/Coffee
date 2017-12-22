@@ -1,7 +1,9 @@
-package org.starrier.coffee;
+package org.starrier.coffee.news;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import org.starrier.coffee.R;
 
 public class ItemNewsActivity extends AppCompatActivity {
 

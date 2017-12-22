@@ -1,6 +1,5 @@
 package org.starrier.coffee.fragment;
 
-import android.content.ClipData;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import org.starrier.coffee.ItemNewsActivity;
+import org.starrier.coffee.news.ItemNewsActivity;
 import org.starrier.coffee.R;
 
 public class MapFragment extends  Fragment {

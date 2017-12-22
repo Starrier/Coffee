@@ -1,7 +1,9 @@
-package org.starrier.coffee;
+package org.starrier.coffee.personal;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import org.starrier.coffee.R;
 
 public class SettingActivity extends AppCompatActivity {
 

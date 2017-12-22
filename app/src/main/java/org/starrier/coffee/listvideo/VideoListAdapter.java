@@ -1,4 +1,4 @@
-package org.starrier.coffee;
+package org.starrier.coffee.listvideo;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
 import com.squareup.picasso.Picasso;
+
+import org.starrier.coffee.R;
 
 import fm.jiecao.jcvideoplayer_lib.JCVideoPlayer;
 import fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard;
