@@ -78,12 +78,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         /* BottomBar Navigation start */
         initView();
+        /* RadioButton Icon Start */
         Typeface iconfont = Typeface.createFromAsset(getAssets(), "iconfont/iconfont.ttf");
         rbIndex.setTypeface(iconfont);
         rbMap.setTypeface(iconfont);
         rbLove.setTypeface(iconfont);
         rbPerson.setTypeface(iconfont);
-
+        /* RadioButton Icon End */
 
         mRadioGroup.setOnCheckedChangeListener(this);
         fragments = getFragments();

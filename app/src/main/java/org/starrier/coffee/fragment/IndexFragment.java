@@ -25,6 +25,8 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
+import org.starrier.coffee.game.GameActivity;
+
 /**
  * Created by Administrator on 2016/7/13.
  */
@@ -82,7 +84,7 @@ public class IndexFragment extends Fragment {
         game.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), LoginActivity.class);
+                Intent intent = new Intent(getActivity(), GameActivity.class);
                 startActivity(intent);
             }
         });
@@ -216,11 +218,7 @@ public class IndexFragment extends Fragment {
         // TODO Auto-generated method stub
         super.onStart();
         scheduledExecutorService = Executors.newSingleThreadScheduledExecutor();
-        scheduledExecutorService.scheduleWithFixedDelay(
-                new ViewPageTask(),
-                2,
-                2,
-                TimeUnit.SECONDS);
+        scheduledExecutorService.scheduleWithFixedDelay(new ViewPageTask(), 2, 2, TimeUnit.SECONDS);
     }
 
 

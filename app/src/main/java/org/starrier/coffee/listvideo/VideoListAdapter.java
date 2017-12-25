@@ -19,7 +19,7 @@ import fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard;
 
 public class VideoListAdapter extends BaseAdapter {
 
-    public static final String TAG = "JieCaoVideoPlayer";
+    public static final String TAG = "CoffeeVideo";
 
     int[] videoIndexs = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
     Context context;

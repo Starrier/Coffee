@@ -43,6 +43,8 @@
     <!-- 高德地图 END -->
 
 
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
     <!-- 播放视频 Start -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
@@ -72,7 +74,6 @@
         <activity
             android:name=".Login.LoginActivity"
             android:label="@string/title_activity_login" />
-        <activity android:name=".Login.firstPage" />
         <activity android:name=".Login.registerActivity" />
         <activity
             android:name=".shop.ShoppingCartActivity"
@@ -83,6 +84,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".news.ItemNewsActivity" />
         <activity android:name=".personal.SettingActivity"></activity>
+        <activity android:name=".game.GameActivity"></activity>
     </application>
 
 </manifest>
